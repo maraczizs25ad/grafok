@@ -28,6 +28,9 @@ h3 {
   font-style: italic;
   font-size: 0.7em;
   color: #FF0000;
+  border: 1px solid #FF0000;
+  background-color: #FFFFFF;
+  margin-left: 20px;
 }
 
 .kerdeskep {
@@ -37,4 +40,8 @@ h3 {
 
 a {
   color: red;
+}
+
+#jobbra img {
+    width: 400px;
 }
