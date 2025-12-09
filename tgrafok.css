@@ -36,6 +36,7 @@ h3 {
 .kerdeskep {
   float: left;
   margin-right: 20px;
+  width: 222px;
 }
 
 a {
@@ -44,4 +45,13 @@ a {
 
 #jobbra img {
     width: 400px;
+}
+
+.formula {
+    font-style: italic;
+  }
+
+  .bold-link {
+    font-weight: bold;      
+    text-decoration: none;  
 }
