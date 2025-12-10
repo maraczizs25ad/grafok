@@ -43,19 +43,48 @@
 
     Hány éle van a képen látható teljes gráfnak?
    
-    Eredmény: <br>
+    
 
-<input type="radio" id="35" name="fav_language" value="35">
+<br><input type="radio" id="35" name="fav_language" value="35">
 <label for="html">35</label><br>
 <input type="radio" id="css" name="fav_language" value="45">
 <label for="css">45</label><br>
 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
 <label for="javascript">55</label><br>
 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-<label for="javascript">65</label>
+<label for="javascript">65</label><br>
+
+<button onclick="ellenoriz()">Ellenőrizzük le!</button>
 
 
 
+<script>
+
+function ertekelValasz() {
+    const valaszok = document.getElementsByName("valasz");
+    let kijelolt = null;
+
+    for (let v of valaszok) {
+        if (v.checked) kijelolt = v.value;
+    }
+
+    if (kijelolt === null) {
+        return "Hiányos válasz!";
+    }
+
+    if (kijelolt === "55") {
+        return "Jó válasz!";
+    } else {
+        return "Rossz válasz!";
+    }
+}
+
+function ellenoriz() {
+    const eredmeny = ertekelValasz();
+    document.getElementById("result").innerText = "Eredmény: " + eredmeny;
+}
+</script>
+<p id="result">Eredmény:</p> 
 </body>
 
 </html>
